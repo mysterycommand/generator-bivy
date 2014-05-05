@@ -1,0 +1,58 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title><%= appName %></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="./favicon.ico">
+
+        <!-- build:css(.tmp) css/main.min.css -->
+        <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+
+        <!-- build:replace <script src="js/modernizr.min.js"></script> -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <header role="banner">
+                <hgroup>
+                    <h1><%= appName %></h1>
+                    <h2>A bivouac sack (also known as a bivy, bivvy, or bivi) is an extremely small, lightweight, waterproof shelter, and an alternative to traditional tent systems. It is used by climbers, mountaineers, hikers, ultralight backpackers, soldiers and minimalist campers.</h2>
+                </hgroup>
+                <p>Created by <%= realName %></p>
+            </header>
+            <div role="main">
+                <p>This space intentionally left blank.</p>
+            </div>
+            <aside role="complimentary"></aside>
+            <footer role="contentinfo">Made with the <a href="https://github.com/mysterycommand/generator-bivy">Bivy Generator</a>.</footer>
+        </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        -->
+
+        <!-- build:replace <script src="js/app.min.js"></script> -->
+        <script data-main="scripts/config" src="../bower_components/requirejs/require.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>

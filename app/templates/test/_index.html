@@ -1,0 +1,31 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title><%= appName %> Tests</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="shortcut icon" href="./favicon.ico">
+
+        <link rel="stylesheet" href="../bower_components/mocha/mocha.css">
+        <script src="../bower_components/mocha/mocha.js"></script>
+
+        <script src="../bower_components/chai/chai.js"></script>
+    </head>
+    <body>
+        <div id="mocha" style="opacity: 0.85;"></div>
+
+        <script>
+            window.mocha.setup(
+                {
+                    ui: 'bdd',
+                    reporter: 'html',
+                    ignoreLeaks: true
+                }
+            );
+            window.expect = window.chai.expect;
+        </script>
+
+        <script data-main="spec/config" src="../bower_components/requirejs/require.js"></script>
+    </body>
+</html>
