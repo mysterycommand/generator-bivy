@@ -1,0 +1,18 @@
+# OS Files #
+############
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Node Files #
+##############
+node_modules/
+
+# Project Files #
+#################
+dist/
+.tmp/
+.sass-cache/
+bower_components/
+test/bower_components
