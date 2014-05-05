@@ -2,9 +2,8 @@
 'use strict';
 
 define(function(/*require*/) {
-    /**
-     * ALL YOUR TESTS GO HERE
-     */
+    /** BEGIN TESTS */
+    /** END TESTS */
 
     window.console = window.console || function() {};
     window.notrack = true;

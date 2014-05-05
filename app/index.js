@@ -1,7 +1,5 @@
 'use strict';
 
-// var util = require('util');
-// var path = require('path');
 var yeoman = require('yeoman-generator');
 var chalk = require('chalk');
 
@@ -59,7 +57,7 @@ var BivyGenerator = yeoman.generators.Base.extend({
             this.email = res.email;
             this.githubUrl = res.html_url;
 
-            this.fileHeader = this.engine(this.read('partials/_fileHeader.js', 'utf8'), this);
+            this.fileHeader = this.engine(this.read('../../partials/_fileHeader.js', 'utf8'), this);
 
             done();
         }.bind(this));
