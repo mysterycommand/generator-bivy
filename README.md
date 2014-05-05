@@ -2,7 +2,6 @@
 
 > [Yeoman](http://yeoman.io) generator
 
-
 ## Getting Started
 
 ### What is Yeoman?
@@ -15,7 +14,7 @@ Basically, he wears a top hat, lives in your computer, and waits for you to tell
 
 Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
 
-```
+```bash
 $ npm install -g yo
 ```
 
@@ -25,15 +24,18 @@ Yeoman travels light. He didn't pack any generators when he moved in. You can th
 
 To install generator-bivy from npm, run:
 
-```
-$ npm install -g generator-bivy
+```bash
+$ npm i -g generator-bivy
 ```
 
-Finally, initiate the generator:
+Scaffold a project that looks like [Bivouac](https://github.com/mysterycommand/bivouac) with:
 
-```
+```bash
+$ mkdir bivy-app && cd $_
 $ yo bivy
 ```
+
+Create 'class' constructors wrapped in define calls with `$ yo bivy:class <Name>`. This will simultaneaously create an 'it should exist' smoke test for said class, and require it in `test/spec/main.js`.
 
 ### Getting To Know Yeoman
 
