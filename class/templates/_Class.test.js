@@ -4,11 +4,11 @@
 'use strict';
 
 define(function(require) {
-    var <%= name %> = require('<%= name %>');
+    var <%= name.split('/').pop() %> = require('<%= name %>');
 
-    describe('<%= name %>', function() {
+    describe('<%= name.split('/').pop() %>', function() {
         it('should exist', function() {
-            expect(<%= name %>).to.exist;
+            expect(<%= name.split('/').pop() %>).to.exist;
         });
     });
 });

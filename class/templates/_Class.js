@@ -2,6 +2,6 @@
 'use strict';
 
 define(function(/*require*/) {
-    var <%= name %> = function <%= name %>() {};
-    return <%= name %>;
+    var <%= name.split('/').pop() %> = function <%= name.split('/').pop() %>() {};
+    return <%= name.split('/').pop() %>;
 });
