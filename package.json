@@ -28,7 +28,8 @@
     "yeoman-generator": "^0.16.0"
   },
   "devDependencies": {
-    "mocha": "^1.18.2"
+    "chai": "^1.9.1",
+    "mocha": "^1.21.4"
   },
   "peerDependencies": {
     "yo": "^1.2.0"
